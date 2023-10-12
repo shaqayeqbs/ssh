@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=Roboto+Slab:wght@400;700&display=swap");
+
+  @font-face {
+    font-family: "Mirage";
+    font-weight: 800;
+    src: url("/fonts/Mirage/MirageBlack.otf") format("otf");
+    src: url("/fonts/Mirage/MirageBlack.woff") format("woff");
+    src: url("/fonts/Mirage/MirageBlack.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "BrittanySignature";
+    font-weight: 500;
+    src: url("/fonts/BrittanySignature/BrittanySignature.otf") format("otf");
+    src: url("/fonts/BrittanySignature/BrittanySignature.woff") format("woff");
+    src: url("/fonts/BrittanySignature/BrittanySignature.woff2") format("woff2");
+  }
+}
+
+body,
+html {
+  @apply bg-myWhite !font-sans;
+}
+
+* {
+  @apply !font-sans
+}
+
+.swiper-slide,
+.swiper {
+  @apply bg-transparent rounded-lg;
+}
+
+a {
+  @apply underline;
+}
+
+p {
+  @apply font-sans mb-8;
+}
+
+h1,
+h2 {
+  @apply font-sans mb-8 text-secondary;
+}
+
+label {
+  @apply block uppercase text-xs;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply bg-gray-100 font-sans h-12 w-full px-4 mb-4;
+}
+
+input[type="checkbox"] {
+  @apply hidden;
+}
+
+input[type="checkbox"]+label {
+  @apply bg-checkbox-unchecked bg-no-repeat pl-5;
+}
+
+input[type="checkbox"]:checked+label {
+  @apply bg-checkbox-checked bg-no-repeat pl-5;
+}
+
+.content {
+  @apply p-8;
+}
+
+.box {
+  @apply bg-white shadow-lg p-6 !z-50;
+}
+
+.page-title {
+  @apply text-5xl md:text-6xl lg:text-7xl mb-2;
+}
+
+.answer[disabled] {
+  @apply cursor-default;
+}
+
+.button {
+  @apply h-12 bg-primary border-0 block;
+}
+
+.button-text {
+  @apply text-6xl relative -top-2;
+}
+
+.error {
+  @apply text-red-600;
+}
+
+.circle {
+  @apply fill-silverChalice;
+}
+
+.number {
+  @apply fill-white;
+}
+
+.swiper-slide {
+  @apply bg-transparent;
+}
+
+#app {
+  height: 100%;
+}
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*/
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+} */
